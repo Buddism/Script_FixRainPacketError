@@ -1,0 +1,6 @@
+Author: Buddy (28116), investigation work by Eagle517 (25351)
+Description:
+all precipitation use the first datablock in the datablockgroup which is always 3, or dummyPlayer
+which is an issue because when you make a datablock on the client side (which you should not do)
+the client REPLACES server datablocks starting from 3 onwards
+AvatarGui::onWake (%this) creates a datablock datablock TSShapeConstructor (mDts)
